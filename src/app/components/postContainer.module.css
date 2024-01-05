@@ -1,0 +1,40 @@
+.postContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 5.5rem;
+}
+
+.textBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 39.4375rem;
+  height: 23.375rem;
+  border-radius: 1.25rem;
+  box-shadow: 2px 2px 4px 0px #000 inset;
+  background: #FFF;
+  color: #000;
+  text-align: center;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.1125rem;
+  padding: 1.3rem 4.75rem 1.3rem 4.75rem;
+}
+
+.personName {
+  color: #498AE3;
+  font-style: italic;
+  line-height: normal;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.level {
+  color: #000;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.1125rem;
+}

@@ -1,0 +1,13 @@
+.bookmark {
+  position: relative;
+}
+
+.svgContainer {
+  position: absolute;
+  top: -50px;
+  left: 460px;
+}
+
+.text {
+  z-index: 999;
+}
