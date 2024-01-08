@@ -13,8 +13,8 @@
   height: 23.375rem;
   border-radius: 1.25rem;
   box-shadow: 2px 2px 4px 0px #000 inset;
-  background: #FFF;
-  color: #000;
+  background: var(--white);
+  color: var(--black);
   text-align: center;
   font-weight: 400;
   line-height: normal;
@@ -23,7 +23,7 @@
 }
 
 .personName {
-  color: #498AE3;
+  color: var(--blue);
   font-style: italic;
   line-height: normal;
   font-weight: 700;
@@ -31,7 +31,7 @@
 }
 
 .level {
-  color: #000;
+  color: var(--black);
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 500;

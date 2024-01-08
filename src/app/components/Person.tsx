@@ -1,10 +1,10 @@
-import styles from './person.module.css'
+import styles from '../styles/modules/person.module.css'
 import williamImage from '../../../public/william.png'
 import marcioImage from '../../../public/marcio.png'
 import mauricioImage from '../../../public/mauricio.png'
 import Image from 'next/image'
 import { useContext, useState } from 'react'
-import { PersonContext } from './PersonContext'
+import { PersonContext } from '../contexts/PersonContext'
 import Person from '../interfaces/person.interface'
 import PersonContextInterface from '../interfaces/personContext.interface'
 

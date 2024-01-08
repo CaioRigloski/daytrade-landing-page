@@ -1,7 +1,8 @@
-import styles from './bookmark.module.css'
+import styles from '../styles/modules/bookmark.module.css'
 
 
 export default function Bookmark() {
+  
   return (
     <div className={styles.bookmark}>
       <div className={styles.svgContainer}>

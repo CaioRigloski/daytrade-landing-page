@@ -1,8 +1,8 @@
 import { useContext } from "react"
 import Bookmark from "./Bookmark"
 import Person from "./Person"
-import styles from './postContainer.module.css'
-import { PersonContext } from "./PersonContext"
+import styles from '../styles/modules/postContainer.module.css'
+import { PersonContext } from "../contexts/PersonContext"
 import PersonContextInterface from "../interfaces/personContext.interface"
 
 export default function TextBox() {

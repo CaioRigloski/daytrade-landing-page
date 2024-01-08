@@ -11,7 +11,7 @@
   font-size: 2.25rem;
   font-weight: 400;
   letter-spacing: 0.225rem;
-  color: #FFF;
+  color: var(--white);
   padding-bottom: 3rem;
 }
 
@@ -28,9 +28,9 @@
   width: 29.5rem;
   height: 3.3125rem;
   border-radius: 1.25rem;
-  background: #983C3C;
+  background: var(--red);
   box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
-  color: #FFF;
+  color: var(--white);
   text-align: center;
   font-family: Montserrat;
   font-size: 1rem;
@@ -47,7 +47,7 @@
   align-items: center;
   width: 11.25rem;
   height: 11.25rem;
-  background-color: #FCC917;
+  background-color: var(--yellow);
   border-radius: 50%;
   box-shadow: 2px 2px 4px 0px rgba(255, 255, 255, 0.25) inset;
   transform: rotate(-30deg);

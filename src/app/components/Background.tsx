@@ -1,7 +1,8 @@
 import background from '../../../public/background.jpg'
-import styles from './background.module.css'
+import styles from '../styles/modules/background.module.css'
 
 export default function Background() {
+  
   return (
     <div className={styles.background}>
         <div style={{

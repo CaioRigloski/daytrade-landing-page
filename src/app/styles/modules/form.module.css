@@ -1,0 +1,158 @@
+@keyframes closingCircle {
+  from {
+    clip-path: circle(100% at 50% 50%);
+  }
+  to {
+    clip-path: circle(20% at 50% 50%);
+    background-color: var(--white);
+  }
+}
+
+@keyframes showIn {
+  from {
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(207deg) brightness(111%) contrast(101%);
+  }
+  to {
+    visibility: visible;
+    filter: invert(47%) sepia(76%) saturate(514%) hue-rotate(178deg) brightness(93%) contrast(90%);
+  }
+}
+
+@keyframes textShowIn {
+  from {
+    color: var(--blue);
+  }
+  to {
+    visibility: visible;
+    color: var(--white);
+  }
+}
+
+.formModal {
+  display: grid;
+  grid-template: 1fr / 1fr;
+  width: 100vw;
+  height: 100vh;
+  justify-items: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.50);
+  backdrop-filter: blur(2.5px);
+}
+
+.formContainer {
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  width: 42rem;
+  height: 48rem;
+  border-radius: 0.9375rem;
+  background: var(--blue);
+  justify-items: center;
+  position: relative;
+}
+
+.closeModal {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.formFields {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 38rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--white);
+  padding: 5.94rem;
+  border: 0;
+}
+
+.formInput {
+  background: none;
+  outline: 0;
+  border: 0;
+  border-bottom: 1px solid var(--white);
+  font-size: 1rem;
+  margin-top: 0.13rem;
+  margin-bottom: 2.38rem;
+  width: 100%;
+  color: var(--white);
+}
+
+.formInput:focus, .formInput:-webkit-autofill,.formInput:autofill {
+  -webkit-box-shadow: 0 0 0 1000px var(--blue) inset !important;
+  -webkit-text-fill-color: var(--white) !important;
+}
+
+.termsContainer {
+  border: 0;
+}
+
+.termsBox {
+  display: flex;
+  gap: 0.3rem
+}
+
+.terms {
+  color: var(--white);
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.1rem;
+}
+
+.termsLink {
+  text-decoration-line: underline;
+}
+
+.formSubmit {
+  width: 22.9375rem;
+  height: 2.25rem;
+  border-radius: 0.9375rem;
+  border: 0;
+  background: var(--white);
+  font-weight: 700;
+  color: var(--blue);
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 2.25rem;
+  cursor: pointer;
+}
+
+.formSubmit:disabled {
+  cursor: not-allowed;
+  opacity: 50%;
+}
+
+.succesfulSubmit {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  animation: closingCircle 2s ease forwards;
+}
+
+.checkmark {
+  visibility: hidden;
+  animation: showIn ease-in 0.2s 2s forwards;
+}
+
+.emailReturn {
+  visibility: hidden;
+  position: absolute;
+  bottom: 2rem;
+  z-index: 999;
+  color: var(--white);
+  font-size: 0.9rem;
+  animation: textShowIn ease-in 0.2s 2s forwards;
+}
